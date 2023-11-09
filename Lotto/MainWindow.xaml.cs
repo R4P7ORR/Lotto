@@ -38,7 +38,7 @@ namespace Lotto
 		private void tiTick(object? sender, EventArgs e)
 		{
 			int num = rnd.Next(1, 100);
-			usedNum[counter] = num;
+			usedNum[counter] += num;
 			txtRolling.Text = Convert.ToString(num);
 			switch (counter)
 			{
@@ -48,7 +48,7 @@ namespace Lotto
 					{
 						rnd.Next(1, 100);
 					}
-					usedNum[counter] = num;
+					usedNum[counter] += num;
 					txtResult1.Text = Convert.ToString(num);
 					break;
 				case 1:
@@ -57,7 +57,7 @@ namespace Lotto
 					{
 						rnd.Next(1, 100);
 					}
-					usedNum[counter] = num;
+					usedNum[counter] += num;
 					txtResult2.Text = Convert.ToString(num);
 					break;
 				case 2:
@@ -66,7 +66,7 @@ namespace Lotto
 					{
 						rnd.Next(1, 100);
 					}
-					usedNum[counter] = num;
+					usedNum[counter] += num;
 					txtResult3.Text = Convert.ToString(num);
 					break;
 				case 3:
@@ -75,7 +75,7 @@ namespace Lotto
 					{
 						rnd.Next(1, 100);
 					}
-					usedNum[counter] = num;
+					usedNum[counter] += num;
 					txtResult4.Text = Convert.ToString(num);
 					break;
 				case 4:
@@ -84,7 +84,7 @@ namespace Lotto
 					{
 						rnd.Next(1, 100);
 					}
-					usedNum[counter] = num;
+					usedNum[counter] += num;
 					txtResult5.Text = Convert.ToString(num);
 					timer.Stop();
 					break;
